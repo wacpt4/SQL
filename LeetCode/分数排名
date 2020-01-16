@@ -79,11 +79,4 @@ from 班级
 select score, 
        dense_rank() over(order by Score desc) as Rank
 from Scores;
-注意，mysql版本8已至此窗口函数这个功能，虽然在leetcode上运行不成功，可能的原因是后台的mysql数据库版本不是最新的。
 
-如何对窗口函数不懂，可以看这篇文章，足够通俗易懂《通俗易懂的学会：SQL窗口函数》
-
-作者：houziAI
-链接：https://leetcode-cn.com/problems/rank-scores/solution/tu-jie-sqlmian-shi-ti-jing-dian-pai-ming-wen-ti-by/
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
